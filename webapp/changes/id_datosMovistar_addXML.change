@@ -1,0 +1,38 @@
+{
+	"fileName": "id_datosMovistar_addXML",
+	"fileType": "change",
+	"changeType": "addXML",
+	"moduleName": "customer/zsdsofactshs1/changes/fragments/DatosMovistarSection.fragment.xml",
+	"reference": "customer.zsdsofactshs1",
+	"packageName": "$TMP",
+	"content": {
+		"targetAggregation": "sections",
+		"index": 6,
+		"fragmentPath": "fragments/DatosMovistarSection.fragment.xml"
+	},
+	"selector": {
+		"id": "cus.sd.salesorder.factsheet::sap.suite.ui.generic.template.ObjectPage.view.Details::C_Salesorderitemfs--objectPage",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/cus.sd.salesorder.factsheet/changes/",
+	"projectId": "customer.zsdsofactshs1",
+	"creation": "2022-09-08T09:01:07.609Z",
+	"originalLanguage": "ES",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.84.1",
+		"sourceChangeFileName": "",
+		"compositeCommand": "",
+		"command": "addXML"
+
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

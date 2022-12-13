@@ -1,0 +1,11 @@
+{
+  "componentname": "cus.sd.salesorder.factsheet",
+  "safeMode": false,
+  "appvariant": "zsdsofactshs1",
+  "layer": "CUSTOMER_BASE",
+  "sourceSystem": "M19",
+  "isOVPApp": false,
+  "isFioriElement": true,
+  "environment": "ABAP",
+  "ui5Version": "1.84.1"
+}

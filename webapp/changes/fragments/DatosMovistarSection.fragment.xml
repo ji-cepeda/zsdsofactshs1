@@ -1,0 +1,125 @@
+<!-- Use stable and unique IDs!-->
+<core:FragmentDefinition xmlns:core='sap.ui.core' xmlns:m='sap.m' xmlns="sap.uxap" xmlns:f="sap.ui.layout.form">
+    <!--  add your xml here -->
+    <ObjectPageSection showTitle="true" id="DatosClienteSection">
+        <!-- visible="{= ((${PurchaseOrderType} === 'ZNM') || (${PurchaseOrderType} === 'ZLT')) ? true : false}" >-->
+        <subSections>
+            <ObjectPageSubSection title="{i18n>i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>datosMovistar}" titleUppercase="false" id="Prueba">
+                <f:Form id="FormChange480" editable="true">
+                    <f:layout>
+                        <f:ResponsiveGridLayout id="RespLayout145" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false" />
+                    </f:layout>
+                    <f:formContainers>
+                        <f:FormContainer id="FormContainer333" title="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>datosCliente}">
+                            <f:formElements>
+                                <f:FormElement id="nomRazLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>nomRazon}">
+                                    <f:fields>
+                                        <m:Text text="{nombre1} {nombre2}" id="nomRazT" />
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="NIFLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>NIF}">
+                                    <f:fields>
+                                        <m:Text text="{nif_cif}" id="nifT" />
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="DomLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>dom}">
+                                    <f:fields>
+                                        <m:Text text="{calle_1} {calle_2}" id="domT" />
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="locLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>localidad}">
+                                    <f:fields>
+                                        <m:Text text="{poblacion_1}" id="locT" />
+                                    </f:fields>
+                                </f:FormElement>                                               
+                                <f:FormElement id="codPostLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>codPost}">
+                                    <f:fields>
+                                        <m:Text text="{cod_postal}" id="codPostT" />
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="provLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>prov}">
+                                    <f:fields>
+                                        <m:Text text="{poblacion_2}" id="provT" />
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="paisLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>pais}">
+                                    <f:fields>
+                                        <m:Text text="{pais}" id="paisT" />
+                                    </f:fields>
+                                </f:FormElement>                               
+                            </f:formElements>
+                        </f:FormContainer>
+                        <f:FormContainer id="FormContainer111" title="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>miscel}">
+                            <f:formElements>
+                                <f:FormElement id="cantLineasLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>cantLineas}">
+                                    <f:fields>
+                                        <m:Text text="{num_lineas}" id="cantLineasT" />
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="numeroAbonadoLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>numeroAbonado}">
+                                    <f:fields>
+                                        <m:Text text="{abonado}" id="numeroAbonadoT" />
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="numeroAsociadoLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>numeroAsociado}">
+                                    <f:fields>
+                                        <m:Text text="{asociado}" id="numeroAsociadoT" />
+                                    </f:fields>
+                                </f:FormElement>              
+                                <f:FormElement id="fechaAltaLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>fechaAlta}">
+                                    <f:fields>
+                                        <m:Text text="{fecha_alta}" id="fechaAltaT" />
+                                    </f:fields>
+                                </f:FormElement>                                
+                                <f:FormElement id="tipoContratoLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>tipoContrato}">
+                                    <f:fields>
+                                        <m:Text text="{tipo_contrato}" id="tipoContratoT" />
+                                    </f:fields>
+                                </f:FormElement>                                
+                            </f:formElements>
+                        </f:FormContainer>
+                        <f:FormContainer id="FormContainer222" title="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>nivelesDeVentas}">
+                            <f:formElements>
+                                <f:FormElement id="nVentasN1Label" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>nivelN1}">
+                                    <f:fields>
+                                        <m:Text text="{nivel_1}" id="nVentasN1T" />
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="nVentasN2Label" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>nivelN2}">
+                                    <f:fields>
+                                        <m:Text text="{nivel_2}" id="nVentasN2T" />
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="nVentasN3Label" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>nivelN3}">
+                                    <f:fields>
+                                        <m:Text text="{nivel_3}" id="nVentasN3T" />
+                                    </f:fields>
+                                </f:FormElement>
+                            </f:formElements>
+                        </f:FormContainer>
+                        <f:FormContainer id="FormContainer444" title="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>portab}">
+                            <f:formElements>
+                                <f:FormElement id="opDonanteLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>opDonante}">
+                                    <f:fields>
+                                        <m:Text text="{op_donante}" id="opDonanteT" />
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="opPropietarioLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>opPropietario}">
+                                    <f:fields>
+                                        <m:Text text="{op_propietario}" id="opPropietarioT" />
+                                    </f:fields>
+                                </f:FormElement> 
+                                <f:FormElement id="origenLabel" label="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>origen}">
+                                    <f:fields>
+                                        <m:RadioButton id="rButton1" enabled="false" text="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>prep}" selected="{prepago}" />
+                                        <m:RadioButton id="rButton2" enabled="false" text="{i18n|sap.suite.ui.generic.template.ObjectPage|to_Salesorderitemfs>cont}" selected="{contrato}" />
+                                    </f:fields>
+                                </f:FormElement>                                                                     
+                            </f:formElements>
+                        </f:FormContainer>
+                    </f:formContainers>
+                </f:Form>
+            </ObjectPageSubSection>
+        </subSections>
+    </ObjectPageSection>
+</core:FragmentDefinition>
